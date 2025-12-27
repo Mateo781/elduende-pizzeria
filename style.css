@@ -1,0 +1,266 @@
+:root{
+    --principal: #c03734;
+    --secundario: #e5dd6e;
+    --resaltado: #2a2c3d;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--resaltado);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            color: var(--secundario);
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secundario);
+        }
+        
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #4caf50;
+        }
+        
+        .status-dot.closed {
+            background: #f44336;
+        }
+        
+        .status-text {
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        section {
+            padding: 100px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        section:first-of-type {
+            padding-top: 150px;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--resaltado);
+            text-align: center;
+        }
+        
+        #inicio {
+            background: linear-gradient(135deg, var(--principal) 0%, #8b2826 100%);
+            color: white;
+            text-align: center;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #inicio h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--secundario);
+        }
+        
+        #inicio p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .menu-category {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .menu-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .menu-category h3 {
+            color: var(--principal);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .menu-item {
+            margin: 1rem 0;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .menu-item h4 {
+            color: var(--resaltado);
+            margin-bottom: 0.3rem;
+        }
+        
+        #local {
+            background: #f9f9f9;
+        }
+        
+        .local-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .local-details h3 {
+            color: var(--principal);
+            margin-bottom: 1rem;
+        }
+        
+        .local-map {
+            background: #ddd;
+            border-radius: 10px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .review-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        
+        .reviewer-name {
+            font-weight: bold;
+            color: var(--resaltado);
+        }
+        
+        .stars {
+            color: var(--secundario);
+        }
+        
+        #contacto {
+            background: var(--resaltado);
+            color: white;
+        }
+        
+        #contacto h2 {
+            color: var(--secundario);
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .contact-item {
+            padding: 2rem;
+        }
+        
+        .contact-item h3 {
+            color: var(--secundario);
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
+            }
+            
+            .status {
+                display: none;
+            }
+            
+            #inicio h1 {
+                font-size: 2.5rem;
+            }
+            
+            .local-info {
+                grid-template-columns: 1fr;
+            }
+        }
