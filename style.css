@@ -3,7 +3,10 @@
             --secundario: #e5dd6e;
             --resaltado: #2a2c3d;
         }
-        
+        @font-face {
+            font-family: "Tipografia-principal";
+            src: url(/GreatVibes-Regular.ttf);
+        }
         * {
             margin: 0;
             padding: 0;
@@ -151,6 +154,7 @@
             margin-bottom: 1.5rem;
             color: var(--secundario);
             text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            font-family: "Tipografia-principal";
         }
         
         #inicio p {
