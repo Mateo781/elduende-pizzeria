@@ -5,7 +5,7 @@
         }
         @font-face {
             font-family: "Tipografia-principal";
-            src: url(/GreatVibes-Regular.ttf);
+            src: url(tipografias/GreatVibes-Regular.ttf);
         }
         * {
             margin: 0;
