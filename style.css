@@ -142,7 +142,7 @@
         #inicio {
             position: relative;
             text-align: center;
-            padding-top: 0;
+            padding-top: 3rem;
         }
 
         #inicio::before{
@@ -474,6 +474,7 @@
             width: 50px;
             height: 50px;
             background: rgba(255,255,255,0.1);
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -485,6 +486,7 @@
         .social-links a:hover {
             background: var(--principal);
             transform: translateY(-5px);
+            color: rgb(237, 237, 15);
         }
         
         .footer-bottom {
